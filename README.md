@@ -1,12 +1,44 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# Microsoft Movie Studios Technical Analysis 
 
 ![blueprint](images/blueprint.png)
+## Overview
+Companies coming out with studios to to produce film and tv content are becoming more and more the norm. In an industry that used to only have a few powerful players, digital media has allowed all types of companies to start their own streaming/movies studios. Content has never been more accesible for the consumer and this is causing many existing companies to try to get into the media business. 
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
 
-## Repository Contents
+## Business Problmem
+The question behind this analysis was that Microsoft wants to start its own movie studio, but they are not sure where to begin. They have no industry knowledge and need someone to conduct a data analsysis of films currenlty performing well at the box office. I have conducted said analysis and come up with 3 business recomendations for Microsoft to use. Microsoft can use these recommendations to try become a profitable studio in a short amount of time.  
+## Data
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+The data that was used in this study was taken from four seperate data frames. The first two were taken from imdb which is an online database containing data related to films, televesion programs and other media information. The third data base that used held information on box office numbers such as gross and genre of film. The fourth data frame used held similar data to the third dataframe in that it had box office gross information. 
+
+
+## Methods 
+This was a descriptive analysis that focused that looked closey at the films and type of films that performing well financially in recent years. From this a new stusio can start to build a model of how they want to run. 
+
+
+
+## Visualizations/Explination
+
+### Box office and studio 
+
+Top box office producing studios from 2010-2018. This data came from the bom gross data base. I created a total box office column by adding the domestic and foreign box office numbers for each records. I could then group by studio and get the sum of their total box offices. This chart shows that big name studios are doing well right now such as marvel, fox and warner brothers. It seems to drop off a littel after paramount.  
+
+We can also see the biggest box office money makers in 2018. Most of these films are produced by these larger studios. We can also see that many of these films are sequals or part of some overarching film dynasty. It appears that only bohemoian rhapsody is the only film not connected to another film series in some way. 
+
+
+### Movie Genres and Box office
+
+In order to get this movie genre chart the Bom gross and IMDB title data frame had to be merged. I then did a string contain method to test out a few genres to see which ones were most popular. I created two seperated data bases for this chart one with only the top genre and the rest containg movies without the genre. Adventure films appear to perform well at the box office vs all other genres. 
+
+This provides a litte more insight into genres and how well they perform at the box office. The bom gross and IMDB title data fram were combined here again. I could could then use a groupby.df.agg to to group by genre and add up the box office totals. Adventure and Action are the top here with a sharp drop off after comedy.  
+
+
+
+
+## Production Budget and Box office 
+
+We already saw how these big studios 
+
 
 - `README.md`: The README for this repo branch explaining it's contents - you're reading it now
 - `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
